@@ -1,89 +1,83 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
-      <div class="text-center">
-        <logo />
-        <vuetify-logo />
-      </div>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-          <p>
-            For more information on Vuetify, check out the <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              documentation
-            </a>.
-          </p>
-          <p>
-            If you have questions, please join the official <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="chat"
-            >
-              discord
-            </a>.
-          </p>
-          <p>
-            Find a bug? Report it on the github <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="contribute"
-            >
-              issue board
-            </a>.
-          </p>
-          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
+  <div>
+    <FabRow />
+    <br>
+    <v-expansion-panels v-model="panel" multiple>
+      <v-expansion-panel>
+        <v-expansion-panel-header>Self-hosted</v-expansion-panel-header>
+        <v-expansion-panel-content>
+          <div class="row">
+            <div class="col">
+              <v-card outlined>
+                <v-card-title>Homeassistant</v-card-title>
+                <v-card-text>Open source home automation that puts local control and privacy first; a Home Assistant, HASS Config, and MQTT stack.</v-card-text>
+                <v-card-actions>
+                  <v-btn depressed text href="https://hassio.jacobhq.xyz/">Launch</v-btn>
+                </v-card-actions>
+              </v-card>
+            </div>
+            <div class="col">
+              <v-card outlined>
+                <v-card-title>Listmonk</v-card-title>
+                <v-card-text>A self-hosted newsletter & mailing list manager with performance and features packed into a single binary. Free and open source.</v-card-text>
+                <v-card-actions>
+                  <v-btn depressed text href="https://mail.jacobhq.xyz/">Launch</v-btn>
+                </v-card-actions>
+              </v-card>
+            </div>
+            <div class="col"></div>
           </div>
-          <hr class="my-3">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt Documentation
-          </a>
-          <br>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn
-            color="primary"
-            nuxt
-            to="/inspire"
-          >
-            Continue
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-col>
-  </v-row>
+        </v-expansion-panel-content>
+      </v-expansion-panel>
+      <v-expansion-panel>
+        <v-expansion-panel-header>Development</v-expansion-panel-header>
+        <v-expansion-panel-content>
+          <div class="row">
+            <div class="col">
+              <v-card outlined>
+                <v-card-title>Github</v-card-title>
+                <v-card-text>Millions of developers and companies build, ship, and maintain their software on GitHub—the largest and most advanced development platform in the world.</v-card-text>
+                <v-card-actions>
+                  <v-btn depressed text href="https://github.com/">Launch</v-btn>
+                </v-card-actions>
+              </v-card>
+            </div>
+            <div class="col">
+              <v-card outlined>
+                <v-card-title>Bitbucket</v-card-title>
+                <v-card-text>Bitbucket is more than just Git code management. Bitbucket gives teams one place to plan projects, collaborate on code, test, and deploy.</v-card-text>
+                <v-card-actions>
+                  <v-btn depressed text href="https://bitbucket.org/account/signin/">Launch</v-btn>
+                </v-card-actions>
+              </v-card>
+            </div>
+            <div class="col">
+              <v-card outlined>
+                <v-card-title>Gitpod</v-card-title>
+                <v-card-text>Dev Environments Built for the Cloud. Describe your dev environments as code and automate the last missing piece in your DevOps pipeline.</v-card-text>
+                <v-card-actions>
+                  <v-btn depressed text href="https://gitpod.io/">Launch</v-btn>
+                </v-card-actions>
+              </v-card>
+            </div>
+          </div>
+        </v-expansion-panel-content>
+      </v-expansion-panel>
+    </v-expansion-panels>
+  </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
+import FabRow from '~/components/fab-row.vue'
 
 export default {
   components: {
-    Logo,
-    VuetifyLogo
+    FabRow
+  },
+  data() {
+    return {
+      panel: [0]
+    }
   }
 }
 </script>
