@@ -32,15 +32,27 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
 
 export default {
   data () {
     return {
     }
   },
+  beforeMount() {
+    const theme = localStorage.getItem("dark\_theme");
+    if (theme) {
+        if (theme == "true") {
+            this.$vuetify.theme.dark = true;
+        } else {
+            this.$vuetify.theme.dark = false;
+        }
+    }
+  },
   methods: {
     toggle() {
       this.$vuetify.theme.dark = !this.$vuetify.theme.dark
+      localStorage.setItem("dark\_theme", this.$vuetify.theme.dark.toString());
     }
   }
 }
