@@ -90,6 +90,103 @@
           </div>
         </v-expansion-panel-content>
       </v-expansion-panel>
+      <v-expansion-panel depressed>
+        <v-expansion-panel-header>Documentation</v-expansion-panel-header>
+        <v-expansion-panel-content>
+          <v-subheader>Javascript frameworks</v-subheader>
+          <div class="row">
+            <div class="col">
+              <v-card outlined>
+                <v-card-title>Vuejs docs</v-card-title>
+                <v-card-text>Vuejs is the progressive javaScript framework. It's also an incrementally adoptable ecosystem that scales between a library and a full-featured framework.</v-card-text>
+                <v-card-actions>
+                  <v-btn depressed text href="https://vuejs.org/" color="primary" target="_blank">Launch</v-btn>
+                </v-card-actions>
+              </v-card>
+            </div>
+            <div class="col">
+              <v-card outlined>
+                <v-card-title>Nuxtjs docs</v-card-title>
+                <v-card-text>Build your next Vue.js application with confidence using NuxtJS. An open source framework making web development simple and powerful.</v-card-text>
+                <v-card-actions>
+                  <v-btn depressed text href="https://nuxtjs.org/" color="primary" target="_blank">Launch</v-btn>
+                </v-card-actions>
+              </v-card>
+            </div>
+            <div class="col">
+              <v-card outlined>
+                <v-card-title>Nextjs docs</v-card-title>
+                <v-card-text>Next.js gives you the best developer experience with all the features you need for production: hybrid static & server rendering, TypeScript support, smart bundling, route pre-fetching, and more.</v-card-text>
+                <v-card-actions>
+                  <v-btn depressed text href="https://nextjs.org/" color="primary" target="_blank">Launch</v-btn>
+                </v-card-actions>
+              </v-card>
+            </div>
+          </div>
+          <br>
+          <v-divider></v-divider>
+          <br>
+          <v-subheader>UI frameworks</v-subheader>
+          <div class="row">
+            <div class="col">
+              <v-card outlined>
+                <v-card-title>Vuetify docs</v-card-title>
+                <v-card-text>Vuetify is a Vue UI Library with beautifully handcrafted Material Components. No design skills required — everything you need to create amazing applications is at your fingertips.</v-card-text>
+                <v-card-actions>
+                  <v-btn depressed text href="https://vuetifyjs.com/en/" color="primary" target="_blank">Launch</v-btn>
+                </v-card-actions>
+              </v-card>
+            </div>
+            <div class="col">
+              <v-card outlined>
+                <v-card-title>Bootstrap docs</v-card-title>
+                <v-card-text>Quickly design responsive sites with Bootstrap, the world’s most popular open source UI toolkit, featuring Sass variables, responsive grid system, extensive components, and JavaScript plugins.</v-card-text>
+                <v-card-actions>
+                  <v-btn depressed text href="https://getbootstrap.com/" color="primary" target="_blank">Launch</v-btn>
+                </v-card-actions>
+              </v-card>
+            </div>
+            <div class="col">
+              <v-card outlined>
+                <v-card-title>Bootstrap vue docs</v-card-title>
+                <v-card-text>With BootstrapVue you can build responsive, mobile-first, and ARIA accessible projects on the web using Vue.js and the world's most popular front-end CSS library — Bootstrap v4.</v-card-text>
+                <v-card-actions>
+                  <v-btn depressed text href="https://bootstrap-vue.org/" color="primary" target="_blank">Launch</v-btn>
+                </v-card-actions>
+              </v-card>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <v-card outlined>
+                <v-card-title>TailwindCSS docs</v-card-title>
+                <v-card-text>A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.</v-card-text>
+                <v-card-actions>
+                  <v-btn depressed text href="https://tailwindcss.com/" color="primary" target="_blank">Launch</v-btn>
+                </v-card-actions>
+              </v-card>
+            </div>
+            <div class="col">
+              <v-card outlined>
+                <v-card-title>Geist UI docs</v-card-title>
+                <v-card-text>Geist is an open source design system for building modern websites and applications. Geist UI originated from Zeit UI, a beautiful UI libary crafted by Vercel.</v-card-text>
+                <v-card-actions>
+                  <v-btn depressed text href="https://geist-ui.dev/" color="primary" target="_blank">Launch</v-btn>
+                </v-card-actions>
+              </v-card>
+            </div>
+            <div class="col">
+              <v-card outlined>
+                <v-card-title>Desikit docs</v-card-title>
+                <v-card-text>A beautiful design system based on bootstrap vue, and heavily inspired by Atlassian design. Desikit was crafefted by Desica, for use on its internal websites.</v-card-text>
+                <v-card-actions>
+                  <v-btn depressed text href="https://beta.kit.desica.uk/" color="primary" target="_blank">Launch</v-btn>
+                </v-card-actions>
+              </v-card>
+            </div>
+          </div>
+        </v-expansion-panel-content>
+      </v-expansion-panel>
     </v-expansion-panels>
   </div>
 </template>
