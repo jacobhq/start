@@ -47,7 +47,9 @@ export default {
   pwa: {
     manifest: {
       lang: 'en',
-      name: 'Start | JacobHQ'
+      name: 'Start - JacobHQ',
+      short_name: 'Start',
+      theme_color: '#1976d2'
     }
   },
 
