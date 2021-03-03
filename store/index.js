@@ -1,9 +1,3 @@
-export const state = () => ({
-  dark: true
-})
-
-export const mutations = {
-  toggleMode(state) {
-    state.dark = !state.dark
-  }
-}
+// I'm not using the store I
+// prefer to use local storage
+// instead.
