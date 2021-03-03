@@ -1,5 +1,13 @@
 <template>
   <v-app>
+    <v-snackbar vertical left bottom v-model="InstallPromotion" id="InstallPromotion" timeout="2000000">
+      <h2>Install JacobHQ</h2>
+      <small></small>
+      <p style="margin: 0;">Install for a better experience. No additional space on your device will be used.</p>
+      <template v-slot:action="{ attrs }">
+        <v-btn v-bind="attrs" text color="primary" @click="InstallPromotion = false">Close</v-btn>
+      </template>
+    </v-snackbar>
     <v-app-bar flat fixed style="height: 64px;">
       <v-toolbar-title>Start</v-toolbar-title>
       <v-spacer></v-spacer>
@@ -37,6 +45,7 @@ import { mapMutations } from 'vuex'
 export default {
   data () {
     return {
+      InstallPromotion: true
     }
   },
   beforeMount() {
