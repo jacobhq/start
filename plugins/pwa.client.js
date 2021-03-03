@@ -8,7 +8,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
   deferredPrompt = e;
   // Update UI notify the user they can install the PWA
   const InstallPromotion = document.getElementById('InstallPromotion');
-  InstallPromotion.style.display = "block"
+  InstallPromotion.style.display = "flex"
   // Optionally, send analytics event that PWA install promo was shown.
   console.log(`'beforeinstallprompt' event was fired.`);
 });
