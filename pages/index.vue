@@ -2,7 +2,7 @@
   <div>
     <FabRow />
     <br>
-    <v-expansion-panels v-model="panel">
+    <v-expansion-panels v-model="panel" multiple depressed>
       <v-expansion-panel>
         <v-expansion-panel-header>Self-hosted</v-expansion-panel-header>
         <v-expansion-panel-content>
