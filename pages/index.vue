@@ -3,7 +3,7 @@
     <FabRow />
     <br>
     <v-expansion-panels v-model="panel" multiple depressed>
-      <v-expansion-panel>
+      <v-expansion-panel depressed>
         <v-expansion-panel-header>Self-hosted</v-expansion-panel-header>
         <v-expansion-panel-content>
           <div class="row">
@@ -29,7 +29,7 @@
           </div>
         </v-expansion-panel-content>
       </v-expansion-panel>
-      <v-expansion-panel>
+      <v-expansion-panel depressed>
         <v-expansion-panel-header>Development</v-expansion-panel-header>
         <v-expansion-panel-content>
           <div class="row">
@@ -63,7 +63,7 @@
           </div>
         </v-expansion-panel-content>
       </v-expansion-panel>
-      <v-expansion-panel>
+      <v-expansion-panel depressed>
         <v-expansion-panel-header>School apps</v-expansion-panel-header>
         <v-expansion-panel-content>
           <div class="row">
