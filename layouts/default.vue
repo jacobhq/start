@@ -1,8 +1,8 @@
 <template>
   <v-app>
     <v-snackbar vertical left bottom v-model="InstallPromotion" id="InstallPromotion" timeout="2000000" style="display: none;">
-      <h2 style="margin-bottom: 7.5px;">Install JacobHQ</h2>
-      <p style="margin: 0; color: #b7b7b7;">Install for a better experience. No additional space on your device will be used.</p>
+      <h2 style="margin-bottom: 7.5px; color: #fff;">Install JacobHQ</h2>
+      <p style="margin: 0; color: #d6d6d6;">Install for a better experience. No additional space on your device will be used.</p>
       <template class="row" v-slot:action="{ attrs }">
         <v-btn v-bind="attrs" text color="primary" @click="InstallPromotion = false">Close</v-btn>
         <v-btn text color="primary" id="btn-install">Install</v-btn>
