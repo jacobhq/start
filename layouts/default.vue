@@ -57,6 +57,7 @@ export default {
             this.$vuetify.theme.dark = false;
         }
     }
+    this.$meta().refresh()
   },
   methods: {
     toggle() {
